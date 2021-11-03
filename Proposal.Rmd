@@ -1,0 +1,62 @@
+---
+title: "proposal.Rmd"
+author: Abagail Ohmer
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Names Of team Members: Abagail Ohmer
+
+Link to data:
+-------------
+<https://opendata.maryland.gov/Public-Safety/Maryland-Statewide-Vehicle-Crashes/65du-s3qu>
+
+Overview: 
+---------
+This data explores a set of approved car accidents reports in Maryland from January 2015 to June 2021. The data is provided by Maryland State Police and the owner is the Open Data Administrator. 
+
+Exploratory analysis:
+---------------------
+I plan to remove several columns, like longitude, latitude, MUNI_CODE, MUNI_DESC, etc.
+I need to also make sure I filter all N/A spots in the columns when I am answering these questions because there are many that are missing responses. So, there will be lots of cleaning I need to do to the data.
+There are several questions I would like to explore. I will probably limit some of these questions to one or two years, because there is a lot of data to look at. 
+
+- Are there more car accidents in a certain year (excluding 2021)?, and is there a specific quarter that tends to have more car accident? If yes, explain possible reasons.
+- In the year with the most car accidents, what county (COUNTY_DESC) had the most car accidents? Does this county usually have more car accidents than others?
+- Do car accidents happen more frequently when road conditions are wet, snow, or dry (SURF_COND_DESC)?
+- Does (COUNTY_DESC) Baltimore or Baltimore City have more accidents yearly?
+- Do car accidents in intersections/intersection related (JUNCTION_DESC) happen more frequently in the left turn lane or the right turn lane (LANE_DESC)?
+- Does the total number of car accidents increase from 2015 to 2020? 
+
+
+
+
+
+Link to data:
+-------------
+<https://opendata.maryland.gov/Public-Safety/Violent-Crime-Property-Crime-by-County-1975-to-Pre/jwfa-fdxs>
+
+Overview: 
+---------
+This data is provided by Governor's Office of Crime Control and Prevention. The crime is separated by County, and the dates go from 1975 to 2019. All of the data is in Maryland. Several of the counties do not have an entry for every year. 
+
+Exploratory analysis:
+---------------------
+The data looks to be clean, but I would want to double check that there are no missing values(I found a handful of missing values). Several of the counties do not have an entry for every year. 
+
+- What year and county had the most crime?
+- What is the average (over all years) crime rate for each county? (Maybe make a graph)
+- In 2019, how does total crime and total crime rate in the county with the largest population compare to crime in the county with the lowest population? Is anything surprising? What about for 1975 and 1995? Is any of the crime rates for the county with the smallest population higher than those of the county with the largest population?
+- Compare the individual crime rates in Baltimore County and Baltimore City. Is there more crime in Baltimore City or Baltimore County?
+- Was the total number of crimes in 2019 greater than 1975? (maybe add something more to this question or refine it more)
+
+
+
+
+
+In conclusion, I am leaning towards the first data set proposal because I would be able to ask a wider variety of questions, and clean the data more. However, I am worried because the data is extremely large, which is why I included the second proposal.
+
+
